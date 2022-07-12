@@ -330,14 +330,14 @@ def book():
 def otp():
     global otp
     otp = random.randint(1000, 9999)
-    if(str(phone) == "9015117813"):
+    if(str(phone) == "XXXXXXXXXXXX"):
         client = Client(keys.account_sid, keys.auth_token)
         message = client.messages.create(
             body = "Here is Your OTP: " + str(otp),
             from_ = keys.twilio_number,
             to = "+91" + str(phone)
         )
-    elif(str(phone) == "8091161927"):
+    elif(str(phone) == "XXXXXXXXXX"):
         client = Client(keys.account_sid, keys.auth_token)
         message = client.messages.create(
             body = "Here is Your OTP: " + str(otp),
